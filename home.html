@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Accueil</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .home-container {
+      background: #fff;
+      padding: 3rem;
+      border-radius: 15px;
+      width: 100%;
+      max-width: 600px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      color: #333;
+    }
+
+    .home-container h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #16a2b8;
+    }
+
+    .home-container p {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .logout-btn {
+      margin-top: 2rem;
+      padding: 14px 24px;
+      background-color: #dc3545;
+      color: white;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .logout-btn:hover {
+      background-color: #c82333;
+    }
+  </style>
+</head>
+<body>
+  <div class="home-container">
+    <h1>Bienvenue </h1>
+    <p id="user-email">Chargement de vos informations...</p>
+    <p id="user-id"></p>
+    <button id="logout-btn" class="logout-btn">Se déconnecter</button>
+  </div>
+
+  <!-- Script Firebase -->
+  <script type="module" src="main.js"></script>
+</body>
+</html>
